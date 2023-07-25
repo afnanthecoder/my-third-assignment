@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Gallery</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+<!-- Tailwind And DaisyUi Css Framework  -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome Icon  -->
+<script src="https://kit.fontawesome.com/bcc90d8592.js" crossorigin="anonymous"></script>
+<!-- Google Font Lato  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+
+
 </head>
-<body>
+<body class="font.lato">
+    <header>
+<!-- Navbar Section  -->
+
+    <nav class="max-w-screen-7xl mx-auto lg:px-48 lg:py-11  ">
+        <div class="navbar   lg:bg-[#F85559] rounded-[600px] ">
+           
+              <div class="dropdown ">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content  mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+              <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+              <div class="navbar-center flex-row items-center  gap-4">
+              <img class="w-10 lg:w-1/2" src="./images/logo.png" alt="">
+              <h1 class="font-lato font-extrabold text-2xl"> <span class="text-yellow-300">F</span>ruit <span class="text-green-300">G</span>allery</h1>
+              
+            </div>
+            <div class="navbar-end p-5  "><input type="text" placeholder="Search here" class="text-xs input input-bordered rounded-6xl w-96 max-w-xs"  /></div>
+            
+          </div>
+    </nav>
+    
+<!-- Banner Section Start from Here  -->
+  <section class="max-w-screen-7xl mx-auto lg:px-48 lg:py-4  ">
+     <div class="text-white text-center p-32 space-y-4 my-auto mx-auto  bg-cover bg-center" style="background-image: url(./images/banner4.png); ">
+   <h1 class="lg:text-5xl text-3xl font-extrabold">Exotic Tastes at your <br> Doorstep</h1>
+   <p class="lg:text-xl text-xs font-semibold">We Supply Fresh, Quality Fruits At A Great Price</p>
+   <button class="btn btn-error rounded-lg items-center gap-2"> Shop Now</button>
+     </div>
+    </section>
+    </header>
+    <main>
+        <!-- Deal of the day Section  -->
+        <section class="max-w-screen-7xl mx-auto lg:px-48 lg:py-40">
+            <div class="flex justify-between">
+             <div class="space-y-4">
+                <h1 class="text-5xl font-extrabold">Deal of The Day</h1>
+                <p>Order Fruits online with same-day <br>  Home Delivery. Save Money, Save Time</p> 
+            </div>
+                <div><img class="w-1/2" src="./images/25giphy.gif" alt="">
+                
+             </div>
+             <div class="font-extrabold grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  Days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  Hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  Min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:32;"></span>
+                  </span>
+                  Sec
+                </div>
+              </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
